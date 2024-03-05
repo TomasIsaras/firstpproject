@@ -1,0 +1,38 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.75) !important
+}
+
+.LOGO{
+    width: 150px;
+}
+body {
+    background-image: url("./images/Untitled design (3).png");
+    color: white;
+    height: 100%;
+ }
+
+ h1.display-4 {
+    color: white !important;
+}
+
+.card{
+    border-radius: 5% !important;
+    overflow: hidden;
+    border: 0;
+}
+a {
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline */
+}
+.footer-prop{
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    bottom: 0;
+    width: 100%;
+}
