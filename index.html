@@ -19,36 +19,38 @@
     <!--HEADER-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
       <div class="container-fluid">
-        <a class="navbar-brand"> <img src="./images/LOGO.png" alt="Stafkes.lt logo" class="LOGO"> </a>
+        <a class="navbar-brand" href="./index.html"> <img src="./images/LOGO.png" alt="Stafkes.lt logo" class="LOGO"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
-        <div class="collapse navbar-collapse" id="navbarsExample05">
+        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarsExample05">
+          <div >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center justify-content-center text-center>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Apie mus</a>
+              <a class="nav-link active" aria-current="page" href="#Paslaugos">Paslaugos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Atsiliepimai</a>
+              <a class="nav-link active" aria-current="page" href="#Atsiliepimai">Atsiliepimai</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Narystės</a>
+              <a class="nav-link active" aria-current="page" href="#Narystės">Narystės</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Kontaktai</a>
+              <a class="nav-link active" aria-current="page" href="#Kontaktai">Kontaktai</a>
             </li>
             
           </ul>
+        </div>
         </div>
       </div>
     </nav>
     <!--JOIN US!-->
     <div class="px-4 pt-5 my-5 text-center">
-      <h1 class="display-4 fw-bold text-body-emphasis">Tapk pelningiausios lažybų bendruomenės Lietuvoje nariu!</h1>
+      <h1 class="display-4 fw-bold text-body-emphasis">Pelningiausia lažybų bendruomenė Lietuvoje!</h1>
     </div>
     <!--SNIPPETS-->
-    <div class="container">
+    <div class="container" id="Atsiliepimai">
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -91,76 +93,80 @@
       </button>
     </div>
   </div>
-    <!--WHY US?-->
-    <div class="container px-4 py-5" id="hanging-icons">
-      <h2 class="pb-2">Apie mus</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            
-          </div>
+    <!--PASLAUGOS-->
+    <div class="container px-4 py-5" id="Paslaugos">
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis">Paslaugos</h1>
+        
+      </div>
+      
+      <div class="flex justify-center flex-wrap gap-48 md:gap-64 darken py-2 px-3">
+        <div class="text-center max-w-[35.2rem] md:w-1/3">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="#FFFFFF" style="background: transparent" class="bi bi-check2-all my-2" viewBox="0 0 16 16">
+            <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0"/>
+            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708"/>
+        </svg>
+          <h3 class=" mb-3 " >Statymų Kokybė</h3>
+          <p>Mūsų teikiami statymai jus pasiekia tik po mūsų "filtravimo". Statymai, kurie nėra verti dėmesio arba yra rizikingi - nepristatomi.</p>
         </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body- bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            
-          </div>
+        <div class="text-center max-w-[35.2rem] md:w-1/3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi bi-fire my-2" viewBox="0 0 16 16">
+            <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+          </svg>
+          <h3 class=" mb-3 ">Garantuoti 100% statymai</h3>
+          <p>Sporte būna ir sutartų varžybų, todėl turime unikalų pasiulymą - fiksuoti statymai. </p>
         </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body- bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-           
+        <div class="text-center max-w-[35.2rem] md:w-1/3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" fill="#FFFFFF" style="background: transparent" class="bi bi-fire my-2" viewBox="0 0 16 16">
+            <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708zM2 12.707l7-7L10.293 7l-7 7H2z"/>
+          </svg>
+          <h3 class=" mb-3 ">Pagalba ir konsultacijos 24/7</h3>
+          <p >Visada padėsime su kilusiais neaiškumais ir bėdomis, atsakysime į jūsų klausimus.</p>
+        </div>
+      </div>
+
+
+      
           </div>
         </div>
       </div>
     </div>
     <!--SUBSCRIPTIONS-->
-    <div class="container">
+    <div class="container" id="Narystės">
       <header>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-normal text-body-emphasis">Narystės</h1>
-          <p class="fs-5 text-body-s">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+          
         </div>
       </header>
 
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="row row-cols-1 row-cols-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 shadow-sm">
-            <div class="card-header py-3 text-bg-dark border-dark">
-              <h4 class="my-0 fw-normal">Free</h4>
+            <div class="card-header py-3 border-dark" style="background-color: black;">
+              <h4 class="my-0 fw-normal" style="color: rgb(165, 17, 17);">Standartas</h4>
             </div>
             <div class="card-body" style="background-color: black;">
-              <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+              <h2 class="card-title pricing-card-title" style="color: white;">15€ <small >/ sav.</small></h2>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>10 users included</li>
                 <li>2 GB of storage</li>
                 <li>Email support</li>
                 <li>Help center access</li>
+                
               </ul>
               
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3 text-bg-dark border-dark">
-              <h4 class="my-0 fw-normal">Pro</h4>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header py-3 border-dark" style="background-color: black;">
+              <h4 class="my-0 fw-normal" style="color: rgb(4, 4, 192);">VIP'as</h4>
             </div>
             <div class="card-body" style="background-color: black;">
-              <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+              <h2 class="card-title pricing-card-title" style="color: white;">25€ <small >/ sav.</small></h2>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>20 users included</li>
                 <li>10 GB of storage</li>
@@ -172,12 +178,12 @@
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm border-dark">
-            <div class="card-header py-3 text-bg-dark border-dark">
-              <h4 class="my-0 fw-normal">Enterprise</h4>
+          <div class="card mb-4 shadow-sm border-dark">
+            <div class="card-header py-3 border-dark" style="background-color: black;">
+              <h4 class="my-0 fw-normal" style="color: gold;">100%</h4>
             </div>
             <div class="card-body" style="background-color: black;">
-              <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+              <h2 class="card-title pricing-card-title" style="color: white;">25€</h2>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>30 users included</li>
                 <li>15 GB of storage</li>
@@ -191,27 +197,49 @@
       </div>
     </div>
     <!--CONTACTS-->
-    <div class="px-4 py-5 my-5 text-center">
-      <img class="d-block mx-auto mb-4" src="./images/LOGO.png" alt="Stafkes.lt logo" width="400" height="125">
+    <div class="px-6 pt-5 mt-5 text-center" id="Kontaktai">
+      <img class="d-block mx-auto mb-4 " src="./images/LOGO.png" alt="Stafkes.lt logo" width="400" height="125">
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Telegram</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Instagram</button>
+          <div class="darken px-4 py-2 my-0 ">
+            <p class="lead mb-4">Stafkes.lt - pelningiausia lažybų bendruomenė Lietuvoje</p>
+          <p class="lead mb-4">Jums pristatoma informacija visada yra paremta daugiamete patirtimi statymų duomenų analizėje</p>
+          <p class="lead mb-4">Naujovė kurios negalima atsisakyti - sutarti garantuoti 100% statymai</p>
+          <p class="lead mb-4">Pagalba ir konsultacijos 24/7</p>
+          <p class="lead mb-2">Pradėk kaupti vasaros biudžetą jau dabar!</p>
         </div>
+          
+          <div class="row my-5 py-5">
+              <div class="col-6 ">
+                  <div class="links d-flex flex-column align-items-center justify-content-center">
+                      <a href="https://t.me/+Zrc8VETXpRE1NmM8">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                          <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375 c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219 c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966 c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693 c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351 c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
+                      </svg>
+                      <p>Telegram</p>
+                      </a>
+                    
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div class="links d-flex flex-column align-items-center justify-content-center">
+                      <a href="https://www.instagram.com/stafkes.lt?igsh=MTV3emN3aXEyYjdzeQ==">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                          <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                      </svg>
+                      <p>Instagram</p>
+                      </a>
+                    
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
+  </div>
+  
     <!--FOOTER-->
     <div class="footer-prop" >
-      <footer class="py-3 my-4 ">
-        <ul class="nav justify-content-center pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-bg-">Apie mus</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-">Atsiliepimai</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-">Narystės</a></li>
-          
-        </ul>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <p class="text-left">© 2024 Stafkes.lt. Visos teisės saugomos.</p>
+      <footer class="py-3 mt-4 footer-content">
+        <div class="row row-cols-3 my-3 align-items-center justify-content-center justify-between text-center">
+          <p>© 2024 Stafkes.lt. Visos teisės saugomos.</p>
           <p><a href="./Pirkimo pardavimo taisyklės.html">Pirkimo pardavimo taisyklės</a></p>
           <p><a href="./Privatumo politika.html">Privatumo politika</a></p>
         </div>
