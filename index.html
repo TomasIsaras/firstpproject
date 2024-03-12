@@ -1,253 +1,326 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Stafkes.lt</title>
-        <meta name="description" content="Prisijunk prie sėkmingiausios statymų grupės Lietuvoje. Geriausi statymai, privalumai, narystės planai.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="./styles.css">
-        
-        
-    </head>
-    <body>
-    <!--HEADER-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"> <img src="./images/LOGO.png" alt="Stafkes.lt logo" class="LOGO"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarsExample05">
-          <div >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center justify-content-center text-center>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Paslaugos">Paslaugos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Atsiliepimai">Atsiliepimai</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Narystės">Narystės</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Kontaktai">Kontaktai</a>
-            </li>
-            
-          </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stafkes.lt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg text-lg-end">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/LOGO.png" alt="Stafkes.lt logo" class="LOGO">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarsExample05">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center justify-content-center text-center mx-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Paslaugos">Paslaugos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Atsiliepimai">Atsiliepimai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Narystės">Narystės</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Kontaktai">Kontaktai</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </div>
-      </div>
     </nav>
     <!--JOIN US!-->
-    <div class="px-4 pt-5 my-5 text-center">
-      <h1 class="display-4 fw-bold text-body-emphasis">Pelningiausia lažybų bendruomenė Lietuvoje!</h1>
+    <div class="px-4 py-5 my-5 text-center darken">
+        <h1 class="display-4" style="font-weight: bold;">Pelningiausia lažybų bendruomenė Lietuvoje!</h1>
+    </div>
+    <div class="container px-4 pb-5 text-center">
+      <div class="darken py-3">
+        <p class="px-4" style="font-size: 1rem; ">Kitą pagrindinę informaciją, pasiūlymus bei naujienas rasite mūsų Telegram kanale.</p>
+      <div class="">
+        <a href="https://t.me/+Zrc8VETXpRE1NmM8">
+        <button type="button" class="btn btn-secondary" style="background-color: black;border:0;">
+        <svg class="telegram-btn " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 50 50" width="50" >
+          <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375 c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219 c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966 c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693 c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351 c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
+        </svg>Telegram</button>
+        </a>
+        
+      </div>
+      </div>
+      
+      
     </div>
     <!--SNIPPETS-->
     <div class="container" id="Atsiliepimai">
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <img src="" alt="">
+    
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <div class="container">
+                    <div class="carousel-caption text-start">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <div class="container">
+                    <div class="carousel-caption text-end">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-          <div class="container">
-            <div class="carousel-caption">
-              <img src="" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <img src="" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        
     </div>
-  </div>
     <!--PASLAUGOS-->
     <div class="container px-4 py-5" id="Paslaugos">
-      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 fw-normal text-body-emphasis">Paslaugos</h1>
-        
-      </div>
-      
-      <div class="flex justify-center flex-wrap gap-48 md:gap-64 darken py-2 px-3">
-        <div class="text-center max-w-[35.2rem] md:w-1/3">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="#FFFFFF" style="background: transparent" class="bi bi-check2-all my-2" viewBox="0 0 16 16">
-            <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0"/>
-            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708"/>
-        </svg>
-          <h3 class=" mb-3 " >Statymų Kokybė</h3>
-          <p>Mūsų teikiami statymai jus pasiekia tik po mūsų "filtravimo". Statymai, kurie nėra verti dėmesio arba yra rizikingi - nepristatomi.</p>
-        </div>
-        <div class="text-center max-w-[35.2rem] md:w-1/3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi bi-fire my-2" viewBox="0 0 16 16">
-            <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
-          </svg>
-          <h3 class=" mb-3 ">Garantuoti 100% statymai</h3>
-          <p>Sporte būna ir sutartų varžybų, todėl turime unikalų pasiulymą - fiksuoti statymai. </p>
-        </div>
-        <div class="text-center max-w-[35.2rem] md:w-1/3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" fill="#FFFFFF" style="background: transparent" class="bi bi-fire my-2" viewBox="0 0 16 16">
-            <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708zM2 12.707l7-7L10.293 7l-7 7H2z"/>
-          </svg>
-          <h3 class=" mb-3 ">Pagalba ir konsultacijos 24/7</h3>
-          <p >Visada padėsime su kilusiais neaiškumais ir bėdomis, atsakysime į jūsų klausimus.</p>
-        </div>
-      </div>
-
-
-      
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--SUBSCRIPTIONS-->
-    <div class="container" id="Narystės">
-      <header>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal text-body-emphasis">Narystės</h1>
+            <h1 class="display-4 fw-normal text-body-emphasis">Paslaugos</h1>
+            
+          </div>
           
-        </div>
-      </header>
+          <div class="flex justify-center flex-wrap gap-48 md:gap-64 darken py-2 px-3">
+            <div class="text-center max-w-[35.2rem] md:w-1/3">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="#FFFFFF" style="background: transparent" class="bi bi-check2-all my-2" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708"/>
+            </svg>
+              <h3 class=" mb-3 rastas" >Statymų Kokybė</h3>
+              <p class="rastas">Mūsų teikiami statymai jus pasiekia tik po mūsų "filtravimo". Statymai, kurie nėra verti dėmesio arba yra rizikingi - nepristatomi.</p>
+            </div>
+            <div class="text-center max-w-[35.2rem] md:w-1/3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi bi-fire my-2" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+              </svg>
+              <h3 class=" mb-3 ">Garantuoti 100% statymai</h3>
+              <p>Sporte būna ir sutartų varžybų, todėl turime unikalų pasiulymą - fiksuoti statymai. </p>
+            </div>
+            <div class="text-center max-w-[35.2rem] md:w-1/3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" fill="#FFFFFF" style="background: transparent" class="bi bi-fire my-2" viewBox="0 0 16 16">
+                <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708zM2 12.707l7-7L10.293 7l-7 7H2z"/>
+              </svg>
+              <h3 class=" mb-3 ">Pagalba ir konsultacijos 24/7</h3>
+              <p >Visada padėsime su kilusiais neaiškumais ir bėdomis, atsakysime į jūsų klausimus.</p>
+            </div>
+          </div>
+    
+    
+          
+              </div>
+            </div>
+          </div>
+    </div>
+    <!--NARYSTĖS-->
+    <div class="container" id="Narystės">
+        <header>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <h1 class="display-4 fw-normal text-body-emphasis">Narystės</h1>
+              
+            </div>
+    
+            <div class="table-responsive rounder my-4" >
+              <table class="table text-center rounder ">
+                <thead >
+                  <tr>
+                    <th style="width: 25%;"></th>
+                    <th style="width: 25%;">Stafkes.lt Table Tennis</th>
+                    <th style="width: 25%;">Stafkes.lt VIP</th>
+                    <th style="width: 25%;">Stafkes.lt Analytics</th>
+                  </tr>
+                </thead>
+                <tbody class="">
+                  <tr>
+                    <th scope="row" class="text-start row-head">Statymai per dieną</th>
+                    <td>1 - 3</td>
+                    <td>1 - 2</td>
+                    <td>1 - 2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start row-head">Combo statymai</th>
+                    <td><svg id="Layer_0" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                    <td><svg id="Layer_1" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg> </td>
+                    <td><svg id="Layer_2" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                  </tr>
+                </tbody>
+        
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start row-head">Super Combo statymai</th>
+                    <td></td>
+                    <td><svg id="Layer_1" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                    <td><svg id="Layer_2" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start row-head">Statymų analizė</th>
+                    <td></td>
+                    <td></td>
+                    <td><svg id="Layer_2" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start row-head">Garantuoti statymai</th>
+                    <td><svg id="Layer_0" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                    <td></td>
+                    <td><svg id="Layer_2" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start row-head">Laimėjimo tikimybė</th>
+                    <td>- 94 %</td>
+                    <td>70 % - 86 %</td>
+                    <td>77 - 89 %</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start row-head">Pagalba 24/7</th>
+                    <td><svg id="Layer_0" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                    <td><svg id="Layer_1" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                    <td><svg id="Layer_2" width="24" height="24"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 109.76"><title>red-check-mark</title><path d="M0,52.88l22.68-.3A84.1,84.1,0,0,1,46,72.44,314.13,314.13,0,0,1,105.6,0h17.28A522.93,522.93,0,0,0,46.77,109.76C36,86.69,21,67.27,0,52.88Z"/></svg></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+    
+    
+    
+          </header>
+    
+           <div class="row row-cols-1 row-cols-lg-3 mb-3 ">
+ <div class="col">
+              <div class="card mb-4 shadow-sm border-dark">
+                <div class="card-header py-3 border-dark" style="background-color: black;">
+                  <h4 class="my-0 fw-normal" style="color: #217f34;font-size:2rem">Table Tennis</h4>
+                </div>
+                <div class="px-4 py-2 text-start" style="background-color: black; color:white">
+                  <p class="term">Mėnesis</p>
+                  <p class="price">159.99 €</p>
+                  <p class="term">2 Savaitės</p>
+                  <p class="price">89.99 €</p>
+                  <p class="term">24 h</p>
+                  <p class="price">11.99 €</p>
+                  <p>Papildomą informaciją ir kitus narystės laikotarpius matysite <a href="https://t.me/+Zrc8VETXpRE1NmM8" style="color: #217f34;">Stafkes.lt Telegram grupėje.</a></p>
+    
+                </div>
+              </div>
+            </div>
 
-      <div class="row row-cols-1 row-cols-3 mb-3 text-center">
-        <div class="col">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header py-3 border-dark" style="background-color: black;">
-              <h4 class="my-0 fw-normal" style="color: rgb(165, 17, 17);">Standartas</h4>
+            <div class="col">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header py-3 border-dark" style="background-color: black;">
+                  <h4 class="my-0 fw-normal" style="color: #e70e0e; font-size:2rem">VIP narystė</h4>
+                </div>
+                <div class="px-3 py-2 text-start" style="background-color: black; color:white">
+                  <p class="term">Mėnesis</p>
+                  <p class="price">69.99 €</p>
+                  <p class="term">2 Savaitės</p>
+                  <p class="price">39.99 €</p>
+                  
+                  <p class="term">24 h</p>
+                  <p class="price">6.99 €</p>
+                  <p>Papildomą informaciją ir kitus narystės laikotarpius matysite <a href="https://t.me/+Zrc8VETXpRE1NmM8" style="color:#e70e0e;">Stafkes.lt Telegram grupėje.</a></p>
+                </div>
+              </div>
             </div>
-            <div class="card-body" style="background-color: black;">
-              <h2 class="card-title pricing-card-title" style="color: white;">15€ <small >/ sav.</small></h2>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>10 users included</li>
-                <li>2 GB of storage</li>
-                <li>Email support</li>
-                <li>Help center access</li>
-                
-              </ul>
-              
+            <div class="col">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header py-3 border-dark" style="background-color: black;">
+                  <h4 class="my-0 fw-normal" style="color: #4991d9;font-size:2rem">Analytics narystė</h4>
+                </div>
+                <div class="px-3 py-2 text-start" style="background-color: black; color:white">
+                  <p class="term">Mėnesis</p>
+                  <p class="price">109.99 €</p>
+                  <p class="term">2 Savaitės</p>
+                  <p class="price">59.99 €</p>
+                  <p class="term">24 h</p>
+                  <p class="price">11.99 €</p>
+                  <p>Papildomą informaciją ir kitus narystės laikotarpius matysite <a href="https://t.me/+Zrc8VETXpRE1NmM8" style="color: #4991d9;">Stafkes.lt Telegram grupėje.</a></p>
+    
+                </div>
+              </div>
             </div>
+           
           </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header py-3 border-dark" style="background-color: black;">
-              <h4 class="my-0 fw-normal" style="color: rgb(4, 4, 192);">VIP'as</h4>
-            </div>
-            <div class="card-body" style="background-color: black;">
-              <h2 class="card-title pricing-card-title" style="color: white;">25€ <small >/ sav.</small></h2>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 shadow-sm border-dark">
-            <div class="card-header py-3 border-dark" style="background-color: black;">
-              <h4 class="my-0 fw-normal" style="color: gold;">100%</h4>
-            </div>
-            <div class="card-body" style="background-color: black;">
-              <h2 class="card-title pricing-card-title" style="color: white;">25€</h2>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>30 users included</li>
-                <li>15 GB of storage</li>
-                <li>Phone and email support</li>
-                <li>Help center access</li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!--CONTACTS-->
-    <div class="px-6 pt-5 mt-5 text-center" id="Kontaktai">
-      <img class="d-block mx-auto mb-4 " src="./images/LOGO.png" alt="Stafkes.lt logo" width="400" height="125">
-      <div class="col-lg-6 mx-auto">
-          <div class="darken px-4 py-2 my-0 ">
-            <p class="lead mb-4">Stafkes.lt - pelningiausia lažybų bendruomenė Lietuvoje</p>
-          <p class="lead mb-4">Jums pristatoma informacija visada yra paremta daugiamete patirtimi statymų duomenų analizėje</p>
-          <p class="lead mb-4">Naujovė kurios negalima atsisakyti - sutarti garantuoti 100% statymai</p>
-          <p class="lead mb-4">Pagalba ir konsultacijos 24/7</p>
-          <p class="lead mb-2">Pradėk kaupti vasaros biudžetą jau dabar!</p>
-        </div>
-          
-          <div class="row my-5 py-5">
-              <div class="col-6 ">
-                  <div class="links d-flex flex-column align-items-center justify-content-center">
-                      <a href="https://t.me/+Zrc8VETXpRE1NmM8">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                          <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375 c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219 c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966 c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693 c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351 c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
-                      </svg>
-                      <p>Telegram</p>
-                      </a>
-                    
-                  </div>
-              </div>
-              <div class="col-6">
-                  <div class="links d-flex flex-column align-items-center justify-content-center">
-                      <a href="https://www.instagram.com/stafkes.lt?igsh=MTV3emN3aXEyYjdzeQ==">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                          <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
-                      </svg>
-                      <p>Instagram</p>
-                      </a>
-                    
-                  </div>
-              </div>
+    <div class="px-6 pt-5 mt-5 text-center darken" id="Kontaktai">
+        <img class="responsive-image " src="./images/LOGO.png" alt="Stafkes.lt logo" >
+        <div class="col-lg-6 mx-auto ">
+            <div class=" px-4 py-2 my-0 ">
+              <p class="lead mb-4">Stafkes.lt - pelningiausia lažybų bendruomenė Lietuvoje</p>
+            <p class="lead mb-4">Jums pristatoma informacija visada yra paremta daugiamete patirtimi statymų duomenų analizėje</p>
+            <p class="lead mb-4">Naujovė kurios negalima atsisakyti - sutarti garantuoti 100% statymai</p>
+            <p class="lead mb-4">Pagalba ir konsultacijos 24/7</p>
+            <p class="lead mb-2">Pradėk kaupti vasaros biudžetą jau dabar!</p>
           </div>
-      </div>
-  </div>
-  
+            
+            <div class="row  py-5">
+                <div class="col-6 ">
+                    <div class="links d-flex flex-column align-items-center justify-content-center">
+                        <a href="https://t.me/+Zrc8VETXpRE1NmM8">
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                            <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375 c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219 c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966 c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693 c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351 c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
+                        </svg>
+                        <p>Telegram</p>
+                        </a>
+                      
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="links d-flex flex-column align-items-center justify-content-center">
+                        <a href="https://www.instagram.com/stafkes.lt?igsh=MTV3emN3aXEyYjdzeQ==">
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                            <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                        </svg>
+                        <p>Instagram</p>
+                        </a>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--FOOTER-->
     <div class="footer-prop" >
-      <footer class="py-3 mt-4 footer-content">
-        <div class="row row-cols-3 my-3 align-items-center justify-content-center justify-between text-center">
-          <p>© 2024 Stafkes.lt. Visos teisės saugomos.</p>
-          <p><a href="./Pirkimo pardavimo taisyklės.html">Pirkimo pardavimo taisyklės</a></p>
-          <p><a href="./Privatumo politika.html">Privatumo politika</a></p>
-        </div>
-        
-      </footer>
-    </div>
+        <footer class="py-3  footer-content">
+          <div class="row row-cols-3 my-3 align-items-center justify-content-center justify-between text-center">
+            <p>© 2024 Stafkes.lt. Visos teisės saugomos.</p>
+            <p><a href="./Pirkimo pardavimo taisyklės.html">Pirkimo pardavimo taisyklės</a></p>
+            <p><a href="./Privatumo politika.html">Privatumo politika</a></p>
+          </div>
+          
+        </footer>
+      </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script src="./index.js" charset="utf-8" async defer></script>
-    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./index.js" charset="utf-8" async defer></script>
+</body>
 </html>
