@@ -1,14 +1,15 @@
 html, body {
     height: 100%;
+    background-color: black;
+}
+html{
+    background-color: black;
 }
 
 body {
-    background-image: url("./images/Untitled design (3).png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     color: white;
     font-family: "Montserrat", sans-serif;
+    height: 100%;
 }
 
 .navbar {
@@ -85,8 +86,8 @@ tr > *{
 }
 .table-responsive table,
 .table-responsive table * {
-    font-weight: 400 ;
-    color: white !important;
+    font-weight: 400;
+    color: white;
     border-color: rgb(37, 3, 3);
 }
 #Layer_0 path{
@@ -96,7 +97,7 @@ tr > *{
     fill: #e70e0e;
 }
 #Layer_2 path{
-    fill: #4991d9;
+    fill: #e8fb19;
 }
 .table td {
     text-align: center;
