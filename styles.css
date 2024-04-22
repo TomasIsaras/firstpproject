@@ -42,14 +42,14 @@ h1.display-4{
 .card{
     border-radius: 15px !important;
     overflow: hidden;
-    border: 0;
+    border-color: white;
    
 }
 .rounder{
     border-radius: 15px !important;
     overflow: hidden;
-    border: 0;
    padding: 0;
+   border-color: white;
    margin: 0;
 }
 .check-icon{
@@ -67,7 +67,7 @@ h1.display-4{
     overflow-x:hidden;
   }
   
-  .table {
+.table {
     width: 100%;
     max-width: 100%;
     font-size: 1em; /* Default font size */
@@ -88,7 +88,8 @@ tr > *{
 .table-responsive table * {
     font-weight: 400;
     color: white;
-    border-color: rgb(37, 3, 3);
+    border: 0;
+
 }
 #Layer_0 path{
     fill:#217f34;
@@ -123,7 +124,7 @@ tr > *{
     background-color: rgba(0, 0, 0, 0.75) !important;
     margin: 0;
     padding: 0;
-    border: 0;
+    
 }
 .footer-content p{
     margin: 0;
@@ -167,6 +168,6 @@ a{
         background-color: rgba(0, 0, 0, 0.75) !important;
         margin: 0;
         padding: 0;
-        border: 0;
+        
     }
   }
