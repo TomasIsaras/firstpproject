@@ -144,6 +144,125 @@ a{
     background-color: rgba(0, 0, 0, 0.5) !important;
     
 }
+.thead{
+    border-bottom: white 1px;
+}
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    caption-side: top; /* Ensure captions are above the table */
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the tables to wrap to the next line if they exceed the container width */
+    gap: 20px; /* Adds space between tables */
+    justify-content: center; /* Centers the tables in the container */
+    padding: 20px;
+    font-size: small;
+}
+
+.table-container {
+    flex: 1 1 calc(30% - 20px); /* Flex-basis 30% minus the gap, allowing up to 3 columns */
+    max-width: calc(30% - 20px); /* Maximum width of 30% minus the gap */
+    min-width: 250px; /* Minimum width to prevent shrinking too much */
+    height: 300px; /* Fixed height for each table */
+    overflow: auto; /* Scrollable content */
+    border: 1px solid black; /* Optional: Adds a border around each table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    
+    background-color:#217f34; /* Optional: Background color for better visibility */
+}
+input[type="checkbox"].custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Adjust the width */
+    height: 20px; /* Adjust the height */
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: default;
+    position: relative;
+}
+
+/* Checkbox for TRUE (green) */
+input[type="checkbox"].custom-checkbox.true-checkbox {
+    background-color:#217f34; /* Green background */
+}
+
+input[type="checkbox"].custom-checkbox.true-checkbox:checked::after {
+    content: '✔'; /* Checkmark character */
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    position: absolute;
+    left: 3px;
+    top: -2px;
+}
+
+/* Checkbox for FALSE (red) */
+input[type="checkbox"].custom-checkbox.false-checkbox {
+    background-color:#e70e0e; /* Red background */
+}
+
+input[type="checkbox"].custom-checkbox.false-checkbox:checked::after {
+    content: '✖'; /* X mark character */
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    left: 3px;
+    top: -2px;
+}
+/* Ensure checkboxes do not expand row height */
+td {
+    vertical-align: middle; /* Align content to the middle of the cell */
+}
+@media (max-width: 1200px) {
+    .table-container {
+        flex: 1 1 calc(40% - 20px); /* Adjusts to 2 columns on medium screens */
+        max-width: calc(40% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .table-container {
+        flex: 1 1 calc(50% - 20px); /* Adjusts to 2 columns on small screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        flex: 1 1 calc(100% - 20px); /* Adjusts to 1 column on smaller screens */
+        max-width: calc(100% - 20px);
+        padding: 10;
+    }
+}
+
+@media (max-width: 576px) {
+    .table-container {
+        flex: 1 1 100%; /* Adjusts to 1 column on extra small screens */
+        max-width: 100%;
+        padding: 10;
+    }
+}
+
+
+table {
+    width: 100%; /* Ensures the table takes full width of its container */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000; /* Adds a border to the table cells */
+    padding: 8px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
 @media (max-width: 576px) {
     html,body{
         overflow-x: hidden;
