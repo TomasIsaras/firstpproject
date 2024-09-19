@@ -48,9 +48,9 @@ function createTableElement(title, rows) {
         row.forEach((cell) => {
             let td = document.createElement('td');
             if (index === 0) {
-                td.style.border = '2px solid #217f34'; // Adjust the border style as needed
+                td.style.border = '2px solid #217f34'; 
             }
-            // Check for TRUE or FALSE values to replace with checkboxes
+            
             if (cell === 'TRUE') {
                 const checkbox = document.createElement('input');
                 checkbox.type = 'checkbox';
@@ -102,11 +102,57 @@ async function fetchAndRenderSheet(sheet) {
     }
 }
 
-// Fetch the sheet metadata and render the sheets in the correct order
+let currentIndex = 0;
+
+function showSlide(index) {
+    const track = document.querySelector('.carousel-track');
+    const totalImages = document.querySelectorAll('.carousel-image').length;
+    const imagesPerSlide = getImagesPerSlide();
+
+    if (index >= totalImages / imagesPerSlide) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = Math.floor(totalImages / imagesPerSlide) - 1;
+    } else {
+        currentIndex = index;
+    }
+
+    const translateXValue = -(currentIndex * 100);
+    track.style.transform = `translateX(${translateXValue}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+function getImagesPerSlide() {
+    const width = window.innerWidth;
+    if (width > 1024) {
+        return 3; 
+    } else if (width > 768) {
+        return 2; 
+    } else {
+        return 1; 
+    }
+}
+
+
+window.onload = () => showSlide(0);
+
+
+window.onresize = () => showSlide(currentIndex);
+
+
+
+
 fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}?key=${apiKey}`)
     .then(response => response.json())
     .then(async metadata => {
-        // Order sheets by index to match their order in Google Sheets
+        
         const orderedSheets = metadata.sheets
             .sort((a, b) => a.properties.index - b.properties.index)
             .map(sheet => ({
@@ -114,7 +160,7 @@ fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}?key=${apiK
                 title: sheet.properties.title
             }));
 
-        // Fetch and render each sheet sequentially to preserve order
+        
         for (const sheet of orderedSheets) {
             await fetchAndRenderSheet(sheet);
         }
