@@ -1,28 +1,32 @@
-function collapseNavbar() {
+function collapseNavbar(event) {
     const navbarToggleButton = document.querySelector('.navbar-toggler');
-
-    if (navbarToggleButton && !navbarToggleButton.classList.contains('collapsed')) {
+    const isNavbarCollapsed = navbarToggleButton && !navbarToggleButton.classList.contains('collapsed');
+    
+    
+    const clickedElement = event?.target;
+    const isCarouselControl = clickedElement && (clickedElement.closest('.carousel') || clickedElement.closest('.navbar-toggler'));
+    
+    
+    if (isNavbarCollapsed && !isCarouselControl) {
         navbarToggleButton.click();
     }
 }
 
-
-window.addEventListener('scroll', function() {
-    
-    collapseNavbar();
+window.addEventListener('scroll', function(event) {
+    collapseNavbar(event);
 });
-window.addEventListener('click', function() {
-    
-    collapseNavbar();
+
+window.addEventListener('click', function(event) {
+    collapseNavbar(event);
 });
 
 const idLinks = document.querySelectorAll('a[href^="#"]');
 idLinks.forEach(link => {
-
-    link.addEventListener('click', function() {
-        collapseNavbar();
+    link.addEventListener('click', function(event) {
+        collapseNavbar(event);
     });
 });
+
 
 const spreadsheetId = '1sT1S19aLOvhhLqo48A6ziAadDQWENr8LPgqEsjo4KAk';
 const apiKey = 'AIzaSyBf_5YvsBm5daTtfK0oHZTho4p3Y8o483w';
