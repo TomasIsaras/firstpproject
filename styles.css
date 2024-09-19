@@ -38,6 +38,88 @@ h1.display-4{
     font-weight: 700 !important;
 }
 
+.first-container{
+width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    overflow: hidden; /* Ensure that only part of the track is visible */
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+}
+
+.carousel-image {
+    object-fit: contain;
+    width: 100%; /* Make sure the image uses the full container width */
+    max-height: 500px;
+    background-color: #000;
+}
+
+/* Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive Layout */
+
+/* Display 3 images per slide on large screens */
+@media (min-width: 1025px) {
+    .carousel-image {
+        min-width: 33.33%; /* 3 images per slide */
+    }
+}
+
+/* Display 2 images per slide on tablets */
+@media (max-width: 1024px) {
+    .carousel-image {
+        min-width: 50%; /* 2 images per slide */
+    }
+}
+
+/* Display 1 image per slide on mobile */
+@media (max-width: 768px) {
+    .carousel-image {
+        min-width: 100%; /* 1 image per slide */
+    }
+}
+
 
 .card{
     border-radius: 15px !important;
@@ -184,6 +266,17 @@ input[type="checkbox"].custom-checkbox {
     cursor: default;
     position: relative;
 }
+.carousel-inner img {
+    max-width: 50%;  /* Adjust this percentage to make the images smaller or larger */
+    height: auto;
+  }
+  /* Flexbox to center the images within each carousel-item */
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust this to control the height of the carousel */
+  }
 
 /* Checkbox for TRUE (green) */
 input[type="checkbox"].custom-checkbox.true-checkbox {
