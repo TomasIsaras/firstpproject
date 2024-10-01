@@ -198,6 +198,9 @@ tr > *{
 .blur-div {
     filter: blur(5px);
 }
+.blur-col{
+    filter: blur(5px);
+}
 .responsive-image {
     max-width: 100%;
     height: auto;
