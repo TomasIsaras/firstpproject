@@ -76,7 +76,7 @@ body {
     background-color: #000;
 }
 
-/* Buttons */
+
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -99,24 +99,24 @@ body {
 
 /* Responsive Layout */
 
-/* Display 3 images per slide on large screens */
+
 @media (min-width: 1025px) {
     .carousel-image {
-        min-width: 33.33%; /* 3 images per slide */
+        min-width: 33.33%; 
     }
 }
 
-/* Display 2 images per slide on tablets */
+
 @media (max-width: 1024px) {
     .carousel-image {
-        min-width: 50%; /* 2 images per slide */
+        min-width: 50%; 
     }
 }
 
-/* Display 1 image per slide on mobile */
+
 @media (max-width: 768px) {
     .carousel-image {
-        min-width: 100%; /* 1 image per slide */
+        min-width: 100%; 
     }
 }
 
@@ -140,11 +140,11 @@ body {
     margin-right: 10px;
 }
 .ben-list p::before {
-    content: '\2713'; /* Unicode character for checkmark */
-    color: red; /* Color of the checkmark */
-    margin-right: 5px; /* Adjust spacing between checkmark and text */
+    content: '\2713'; 
+    color: red; 
+    margin-right: 5px; 
 }
-/* Default styles */
+
 .table-responsive {
     overflow-x:hidden;
   }
@@ -152,7 +152,7 @@ body {
 .table {
     width: 100%;
     max-width: 100%;
-    font-size: 1em; /* Default font size */
+    font-size: 1em; 
   }
   
 .row-head{
@@ -196,7 +196,7 @@ tr > *{
 }
 
 .blur-div {
-    filter: blur(5px); /* Adjust the value (5px) to control the blur level */
+    filter: blur(5px);
 }
 .responsive-image {
     max-width: 100%;
