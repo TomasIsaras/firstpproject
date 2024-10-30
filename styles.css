@@ -9,6 +9,8 @@ html::-webkit-scrollbar {
 }
 html{
     background-color: black;
+    overflow-y: scroll;
+    scrollbar-width: none; 
 }
 
 body {
