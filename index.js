@@ -34,6 +34,9 @@ const apiKey = 'AIzaSyBf_5YvsBm5daTtfK0oHZTho4p3Y8o483w';
 function createTableElement(title, rows) {
     const container = document.createElement('div');
     container.classList.add('table-container');
+    container.style='overflow-y: scroll;scrollbar-width: none;';
+    
+    
     container.classList.add('rounder');
 
     const titleElement = document.createElement('h2');
