@@ -35,15 +35,7 @@ const apiKey = 'AIzaSyBf_5YvsBm5daTtfK0oHZTho4p3Y8o483w';
 
 function createTableElement(title, rows) {
     const container = document.createElement('div');
-    container.classList.add('table-container', 'rounder');
-
-   
-    container.style.overflowY = 'scroll';
-    container.style.scrollbarWidth = 'none'; // Firefox compatibility
-    container.style.webkitOverflowScrolling = 'touch'; // Smooth scrolling on iOS
-
-    
-    container.style.webkitMaskImage = 'linear-gradient(white 100%, transparent 100%)';
+    container.classList.add('table-container', 'rounder', 'hide-scrollbar');
 
     const titleElement = document.createElement('h2');
     titleElement.textContent = title;
