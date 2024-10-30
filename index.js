@@ -1,3 +1,5 @@
+document.documentElement.style.overflowY = 'scroll';
+document.documentElement.style.scrollbarWidth = 'none';
 function collapseNavbar(event) {
     const navbarToggleButton = document.querySelector('.navbar-toggler');
     const isNavbarCollapsed = navbarToggleButton && !navbarToggleButton.classList.contains('collapsed');
