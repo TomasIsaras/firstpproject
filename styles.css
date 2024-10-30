@@ -414,3 +414,16 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 html, body {
     -webkit-mask-image: linear-gradient(white 100%, transparent 100%);
 }
+.hide-scrollbar {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+
+    /* Safari-specific scrollbar hiding */
+    -webkit-mask-image: linear-gradient(white 100%, transparent 100%);
+}
+
+/* Hides scrollbar on Webkit browsers (Safari, Chrome, etc.) */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Safari and Chrome */
+}
