@@ -35,11 +35,15 @@ const apiKey = 'AIzaSyBf_5YvsBm5daTtfK0oHZTho4p3Y8o483w';
 
 function createTableElement(title, rows) {
     const container = document.createElement('div');
-    container.classList.add('table-container');
-    container.style='overflow-y: scroll;scrollbar-width: none;';
+    container.classList.add('table-container', 'rounder');
+
+   
+    container.style.overflowY = 'scroll';
+    container.style.scrollbarWidth = 'none'; // Firefox compatibility
+    container.style.webkitOverflowScrolling = 'touch'; // Smooth scrolling on iOS
+
     
-    
-    container.classList.add('rounder');
+    container.style.webkitMaskImage = 'linear-gradient(white 100%, transparent 100%)';
 
     const titleElement = document.createElement('h2');
     titleElement.textContent = title;
@@ -50,9 +54,6 @@ function createTableElement(title, rows) {
 
     rows.forEach((row, index) => {
         let tr = document.createElement('tr');
-
-        
-        
 
         row.forEach((cell) => {
             let td = document.createElement('td');
@@ -88,6 +89,7 @@ function createTableElement(title, rows) {
 
     return container;
 }
+
 
 
 
